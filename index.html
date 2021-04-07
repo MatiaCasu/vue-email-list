@@ -11,7 +11,11 @@
 <body>
   <div id="app">
     <h1>Random Email</h1>
-    <ul>
+    <!-- Lista visibile solo quando completa  -->
+    <ul v-show="emailList.length === listLength">
+
+    <!-- Elementi lista visibili uno per volta  -->
+    <!-- <ul> -->
       <li v-for="email in emailList">{{ email }}</li>
     </ul>
 
